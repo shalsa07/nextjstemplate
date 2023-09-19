@@ -15,13 +15,22 @@ body {
   box-sizing: border-box;
 }
 
-.light{
-  background-color: var(--bgColor);
-  color: var(--textColor);
+.pageContainer{
+  width: 100%;
+  height: 100%;
+}
+
+.link{
+  text-decoration: none;
 }
 
 .theme{
   width: 100vw;
+}
+
+.light{
+  background-color: var(--bgColor);
+  color: var(--textColor);
 }
 
 .dark{

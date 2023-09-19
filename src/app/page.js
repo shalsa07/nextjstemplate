@@ -1,5 +1,9 @@
+import { PageWrap } from "@/components/pageWrap/page";
+
 export default function Home() {
   return (
-    <div>hello</div>
+    <PageWrap>
+      
+    </PageWrap>
   )
 }

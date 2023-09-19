@@ -1,0 +1,63 @@
+.navbar{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.navbarWrap{
+    display: flex;
+    height: 100%;
+    width: calc(100% - 20px);
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.navbarSearch{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.navbarSearchInput{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30px;
+    width: 280px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: lightgrey solid 1px;
+    font-size: 12px;
+}
+.navbarSearchInput::placeholder{
+    color: inherit;
+    font-size: 12px;
+}
+.navbarLogo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 8px;
+}
+.navbarUserSettings{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navbarLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    gap: 10px;
+    text-transform: capitalize
+}
