@@ -3,28 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --bgColor:white;
-  --textColor:#222;
-  --altbgColor:#131313;
-  --alttextColor:white;
+  --bgDark:#0f172a;
+  --bgLight:#f9f9fb;
+  --bg:#1e293b;
+  --bgAlt:#f9f9fb;
+  --textDark:#0d0e17;
+  --textPaid:#33d7a0;
+  --textPending:#ff9100;
+  --textLight:#e0e4fb;;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.dark{
+  background-color: var(--bgDark);
+  color: var(--bglight);
 }
 
 .light{
-  background-color: var(--bgColor);
-  color: var(--textColor);
+  color: var(--textDark);
+  background-color: var(--bglight);
+}
+
+::-webkit-scrollbar{
+  display: none;
 }
 
 .theme{
   width: 100vw;
 }
 
-.dark{
-  background-color: var(--altbgColor);
-  color: var(--alttextColor);
+body {
+  margin: 0;
+  padding: 0;
 }
