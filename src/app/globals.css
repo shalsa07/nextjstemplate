@@ -7,7 +7,8 @@
   --bgLight:#f9f9fb;
   --bg:#1e293b;
   --bgAlt:#f9f9fb;
-  --textDark:#0d0e17;
+  --textDark:#000000;
+  /* --textDark:#0d0e17; */
   --textPaid:#33d7a0;
   --textPending:#ff9100;
   --textLight:#e0e4fb;;
@@ -15,7 +16,7 @@
 
 .dark{
   background-color: var(--bgDark);
-  color: var(--bglight);
+  color: var(--textDark);
 }
 
 .light{
@@ -29,6 +30,7 @@
 
 .theme{
   width: 100vw;
+  /* overflow: hidden; */
 }
 
 body {
