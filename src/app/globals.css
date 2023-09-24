@@ -16,7 +16,7 @@
 
 .dark{
   background-color: var(--bgDark);
-  color: var(--textDark);
+  color: var(--textLight);
 }
 
 .light{

@@ -6,58 +6,50 @@ import Header from '../header/page'
 
 const invoiceList=[
   {
-    invocieNumber:'#556665',
-    date:'#556665',
-    invocieAmount:'P22,000',
-    className:'#556665',
-    status:'paid'
-  },
-  {
-    invocieNumber:'#556665',
-    date:'#556665',
-    invocieAmount:'P22,000',
-    className:'#556665',
-    status:'paid'
-  },
-  {
-    invocieNumber:'#556665',
-    date:'#556665',
-    invocieAmount:'P2,000',
-    className:'#556665',
+    invoiceNumber:Math.random(),
+    date:'03/10/2023',
+    invoiceAmount:'P22,000',
+    clientName:'thato seade',
     status:'due'
   },
   {
-    invocieNumber:'#556665',
-    date:'#556665',
-    invocieAmount:'P22,000',
-    className:'#556665',
+    invoiceNumber:Math.random(),
+    date:'03/10/2023',
+    invoiceAmount:'P22,000',
+    clientName:'thato seade',
     status:'paid'
   },
   {
-    invocieNumber:'#556665',
-    date:'#556665',
-    invocieAmount:'P22,000',
-    className:'#556665',
+    invoiceNumber:Math.random(),
+    date:'03/10/2023',
+    invoiceAmount:'P22,000',
+    clientName:'thato seade',
+    status:'due'
+  },
+  {
+    invoiceNumber:Math.random(),
+    date:'03/10/2023',
+    invoiceAmount:'P22,000',
+    clientName:'thato seade',
     status:'paid'
   },
   {
-    invocieNumber:'#556665',
-    date:'#556665',
-    invocieAmount:'P22,000',
-    className:'#556665',
+    invoiceNumber:Math.random(),
+    date:'03/10/2023',
+    invoiceAmount:'P22,000',
+    clientName:'thato seade',
     status:'due'
   },
 ]
 
 const PageWrap = () => {
+
   return (
-    <>
-      {true 
-        ? <div className='flex flex-col gap-10 p-5 justify-start'>
-            <Header/>
-            {invoiceList.map((item)=><InvoiceSections key={item.invocieNumber} item={item}/>)}
-          </div>
-        : <NewInvoiceForm/>}
+    <> 
+        <div className='flex flex-col min-h-[calc(100vh-80px)] gap-10 p-5 justify-start md:w-[640px] md:-mx-auto lg:w-[1024px] mx-auto bg-inherit '>
+          {invoiceList.map((item)=><InvoiceSections key={item.invoiceNumber} item={item}/>)}
+        </div>
+        <NewInvoiceForm/>
     </>
   )
 }

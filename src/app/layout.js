@@ -3,6 +3,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Sidebar from '@/components/sidebar/page'
 import { ContextThemeProvider } from '@/context/contextTheme/ContextTheme'
+import { ContextUiProvider } from '@/context/contextUi/ContextUi'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,9 +18,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <ContextThemeProvider>
+        <ContextUiProvider>
           <Sidebar/>
-          {/* <Header/> */}
+          <Header/>
           {children}
+        </ContextUiProvider>
         </ContextThemeProvider>
       </body>
     </html>
