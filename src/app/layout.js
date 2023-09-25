@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Sidebar from '@/components/sidebar/page'
 import { ContextThemeProvider } from '@/context/contextTheme/ContextTheme'
 import { ContextUiProvider } from '@/context/contextUi/ContextUi'
+import AuthProvider from '@/providers/AuthProvider/AuthProvider'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <AuthProvider>
         <ContextThemeProvider>
         <ContextUiProvider>
           <Sidebar/>
@@ -24,6 +26,7 @@ export default function RootLayout({ children }) {
           {children}
         </ContextUiProvider>
         </ContextThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   )

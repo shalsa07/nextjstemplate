@@ -141,8 +141,8 @@ const NewInvoiceForm = () => {
     },[])
     // console.log(state.showInvoiceForm);
   return (
-     <div ref={refForm} className={`${state.showInvoiceForm ? 'flex' : 'hidden'} fixed left-0 top-[80px] lg:top-0 bg-[#000000bd] w-full z-20 h-[calc(100vh-80px)] lg:h-screen lg:left-20 transition-all duration-[.35s]`}>
-        <div className='flex flex-col md:w-[600px] md:rounded-r-[30px] p-5 relative  bg-white overflow-y-auto '>
+     <div ref={refForm} className={`${state.showInvoiceForm ? 'flex' : 'hidden'} fixed text-[black] left-0 top-[80px] lg:top-0 bg-[#000000bd] w-full z-20 h-[calc(100vh-80px)] lg:h-screen lg:left-20 transition-all duration-[.35s]`}>
+        <div className='flex flex-col md:w-[600px] md:rounded-r-[30px] p-5 relative  bg-white overflow-y-auto cur '>
             <div 
                 onClick={()=>dispatch({type:ACTIONS_UI_STATE.HIDE_INVOCE_FORM})}
                 className='flex items-center gap-1 w-fit h-[60px] cursor-pointer'
